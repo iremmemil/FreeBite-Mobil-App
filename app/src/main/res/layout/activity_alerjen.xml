@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Alerjen seçim ekranı -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F5EA">
+
+    <!-- Sayfadaki tüm bileşenleri tutan ana layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Sayfa başlığı -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alerjen Profilim"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#5F7F2F"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Kullanıcının seçebileceği yaygın alerjenler -->
+        <CheckBox
+            android:id="@+id/chkGluten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gluten" />
+
+        <CheckBox
+            android:id="@+id/chkLaktoz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laktoz / Süt" />
+
+        <CheckBox
+            android:id="@+id/chkYumurta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yumurta" />
+
+        <CheckBox
+            android:id="@+id/chkSoya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soya" />
+
+        <CheckBox
+            android:id="@+id/chkFistik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yer Fıstığı" />
+
+        <CheckBox
+            android:id="@+id/chkFindik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fındık" />
+
+        <CheckBox
+            android:id="@+id/chkBadem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Badem" />
+
+        <CheckBox
+            android:id="@+id/chkCeviz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ceviz" />
+
+        <CheckBox
+            android:id="@+id/chkKaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaju" />
+
+        <CheckBox
+            android:id="@+id/chkAntepFistigi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Antep Fıstığı" />
+
+        <!-- Meyve alerjenleri -->
+        <CheckBox
+            android:id="@+id/chkCilek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çilek" />
+
+        <CheckBox
+            android:id="@+id/chkMuz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muz" />
+
+        <CheckBox
+            android:id="@+id/chkKivi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kivi" />
+
+        <CheckBox
+            android:id="@+id/chkSeftali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şeftali" />
+
+        <!-- Deniz ürünleri alerjenleri -->
+        <CheckBox
+            android:id="@+id/chkBalik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balık" />
+
+        <CheckBox
+            android:id="@+id/chkKarides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karides" />
+
+        <CheckBox
+            android:id="@+id/chkYengec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yengeç" />
+
+        <CheckBox
+            android:id="@+id/chkMidye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Midye" />
+
+        <!-- Diğer yaygın alerjenler -->
+        <CheckBox
+            android:id="@+id/chkSusam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Susam" />
+
+        <CheckBox
+            android:id="@+id/chkBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bal" />
+
+        <!-- Seçilen alerjenleri veritabanına kaydeden buton -->
+        <Button
+            android:id="@+id/btnKaydet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Kaydet"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7FA33A"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>

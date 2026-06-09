@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Kullanıcının ürün sorgulama yapabildiği ekran -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5EA">
+
+    <!-- Sayfadaki tüm bileşenleri tutan ana layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Sayfa başlığı -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ürün Sorgula"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#5F7F2F"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Kullanıcının ürün adını gireceği alan -->
+        <EditText
+            android:id="@+id/edtUrunAdi"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Ürün adı giriniz..."
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:textColor="#333333"
+            android:textColorHint="#999999" />
+
+        <!-- Open Food Facts API üzerinden ürün sorgulama işlemini başlatan buton -->
+        <Button
+            android:id="@+id/btnUrunAra"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Ürünü Ara"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7FA33A"
+            android:layout_marginTop="16dp" />
+
+        <!-- Ürünün güvenli veya riskli olup olmadığını gösteren alan -->
+        <TextView
+            android:id="@+id/txtDurum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sonuç: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#5F7F2F"
+            android:layout_marginTop="24dp" />
+
+        <!-- API'den gelen ürün adının gösterildiği alan -->
+        <TextView
+            android:id="@+id/txtUrunAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#3F4F2A"
+            android:layout_marginTop="18dp" />
+
+        <!-- API'den gelen marka bilgisinin gösterildiği alan -->
+        <TextView
+            android:id="@+id/txtMarka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="6dp" />
+
+        <!-- Ürünün içerdiği alerjenlerin gösterildiği alan -->
+        <TextView
+            android:id="@+id/txtAlerjenler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:layout_marginTop="12dp" />
+
+        <!-- İçindekiler bilgisinin Türkçe özet olarak gösterildiği alan -->
+        <TextView
+            android:id="@+id/txtIcindekiler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

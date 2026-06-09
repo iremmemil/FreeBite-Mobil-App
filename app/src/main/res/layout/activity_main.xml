@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- FreeBite uygulamasının ana ekranı -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5EA">
+
+    <!-- Ana ekran bileşenlerini tutan layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Uygulama adı -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FreeBite"
+            android:textColor="#5F7F2F"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            android:gravity="center"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="34dp" />
+
+        <!-- Tanıtım kartı -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="22dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <!-- Temsili alışveriş ikonu -->
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:gravity="center"
+                android:text="🛒"
+                android:textSize="42sp"
+                android:background="#EEF3D8" />
+
+            <!-- Uygulamanın sloganı -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Güvenle ye, sağlığını koru."
+                android:textColor="#3F4F2A"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="18dp" />
+
+            <!-- Uygulamanın amacı -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alerjen risklerini takip et."
+                android:textColor="#777777"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Alerjen seçim ekranına geçiş butonu -->
+        <Button
+            android:id="@+id/btnAlerjen"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Alerjen Profilim        ›"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7FA33A"
+            android:layout_marginTop="26dp" />
+
+        <!-- Ürün sorgulama ekranına geçiş butonu -->
+        <Button
+            android:id="@+id/btnUrunSorgula"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Ürün Sorgula        ›"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7FA33A"
+            android:layout_marginTop="14dp" />
+
+        <!-- Daha önce yapılan sorguların görüntülendiği ekran -->
+        <Button
+            android:id="@+id/btnGecmis"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Geçmişim        ›"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7FA33A"
+            android:layout_marginTop="14dp" />
+
+        <!-- Katkı maddeleri rehberi ekranına geçiş butonu -->
+        <Button
+            android:id="@+id/btnENumarasi"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="E-Numarası Rehberi        ›"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7FA33A"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
